@@ -1,0 +1,75 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 10rem;
+	text-transform: uppercase;
+	background: repeating-linear-gradient(white, white 1px, transparent 1px, transparent 6px);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.header-second {
+	font-family: 'Secular One', sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+.bg-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	color: #fff;
+	animation-name: show;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.wrapper svg {
+	width: 54px;
+	height: 54px;
+}
+
+.wrapper svg g {
+	fill: #fff;
+	transition: all ease 1.5s;
+}
+
+.wrapper svg:hover g {
+	fill: #000;
+}
